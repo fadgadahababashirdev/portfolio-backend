@@ -92,7 +92,7 @@ const createMessage = async (req, res) => {
     await newMessage.save();
     
     // Send verification email
-    const verificationLink = `${process.env.MY_APP}/api/messages/verify/${newMessage._id}`;
+    const verificationLink = `${process.env.MY_APP}/message-verification/${newMessage._id}`;
     await sendVerificationEmail(email, verificationLink);
     
     res.status(200).json({
