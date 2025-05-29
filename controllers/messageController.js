@@ -97,7 +97,7 @@ const createMessage = async (req, res) => {
     
     res.status(200).json({
       success: true,
-      message: 'Verification email sent. Please check your inbox.'
+      message: 'Verification email sent. Please check your inbox.To verify your message'
     });
     
   } catch (err) {
@@ -140,7 +140,7 @@ const verifyMessage = async (req, res) => {
     
     res.status(200).json({
       success: true,
-      message: 'Message verified and sent successfully!'
+      message: 'Message verified and sent to me successfully! , I will reachout ASAP'
     });
     
   } catch (err) {
